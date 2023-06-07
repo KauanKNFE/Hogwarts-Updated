@@ -1,0 +1,90 @@
+@font-face {
+  font-family: "Harry";
+  src: url(../fontes/harry.TTF);
+}
+
+  body {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  header {
+    background: linear-gradient(to bottom, var(--cor-primaria), rgba(0, 0, 0, 0));
+    height: 200px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between; /* Alterado para distribuir os elementos horizontalmente */
+    align-items: center;
+    font-family: Harry;
+    padding: 0 50px; /* Adicionado espaçamento interno para alinhar os elementos corretamente */
+    backdrop-filter: blur(10px);
+  }
+  
+  .titulo {
+    color: var(--cor-secundaria);
+    font-size: 100px;
+    text-shadow: 5px 5px 10px var(--cor-quaternaria);
+    margin: auto;
+    margin-right: inherit;
+  }
+  
+  .menu {
+    display: flex;
+    background-color: #100e0d86;
+    border-radius: 10px; /* Ajuste o valor do raio conforme necessário */
+    box-shadow: 0 0 10px 5px #100e0dd8;
+  }
+  
+  
+  .menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+    border-radius: 100px;
+    padding: 10px;
+    font-family: "Harry";
+    font-size: 30px;
+    text-shadow: 3px 3px 5px var(--cor-quaternaria);
+    transition: transform 0.3s ease;
+  }
+  
+  .menu a:hover {
+    background: radial-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0));
+    transform: scale(1.3);
+  }
+  
+  .icone {
+    margin-right: 40px;
+    margin-left: 20px; /* Espaçamento entre o ícone, o título e o menu */
+    max-width: 100px; /* Largura do ícone */
+    margin-right: auto;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  #grifinoria{
+    color: #d54728;
+    text-shadow: 3px 3px 5px #581f00;
+    }
+  #corvinal{
+    color: #487c9f;
+    text-shadow: 3px 3px 5px #1b4683;
+    }
+  #lufalufa{
+    color: #d19e45;
+    text-shadow: 3px 3px 5px #43331f;
+  }
+  #sonserina{
+    color: #8aa06a;
+    text-shadow: 3px 3px 5px #245224;
+    }
+  #geral{
+    color: #a3aaaa;
+    text-shadow: 3px 3px 5px #5a5c5c;
+  }

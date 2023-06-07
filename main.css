@@ -12,8 +12,46 @@
     --cor-Siena: #70491a; /* Siena crua */
   }
 
+  @font-face {
+    font-family: "Magik";
+    src: url(fontes/Magik.TTF);
+  }
+
   body{
     background-image: url(img/mainback.jpg);
     background-position: 0px;
     background-size: 100%;
+  }
+
+  .conteudo{
+    background-color: #04030336;
+  }
+
+  .title{
+    font-size: 5vw;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4), 2px 2px 2px rgba(0, 0, 0, 0.3), 3px 3px 3px rgba(0, 0, 0, 0.2);
+  }
+
+  @keyframes swing {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(2deg); }
+    100% { transform: rotate(0deg); }
+  }
+  
+  .floating-card {
+    position: relative;
+    margin: auto;
+    margin-top: 2vw;
+    margin-bottom: 4vw;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 1000px;
+    padding: 20px;
+    background-color: #6b6b6b83;
+    box-shadow: 0 2px 30px rgba(86, 0, 0, 0.792);
+    animation: swing 5s infinite;
+    font-family: "Magik";
+    font-size: 2vw;
+    backdrop-filter: blur(0.5vw);
   }
